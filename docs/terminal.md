@@ -82,7 +82,7 @@ p10k configure
 - :material-refresh:{ .lg .middle } **`p10k reload`** <br>
   Применить изменения из `~/.p10k.zsh` без перезапуска терминала.
   
-- :material-monitor-dashboard:{ .lg .middle } **`p10k display -a`** <br>
+- :material-monitor-dashboard:{ .lg .middle } **`p10k display`** <br>
   Показать все текущие настройки и размеры сегментов.
 
 !!! info "Где хранятся настройки?"
