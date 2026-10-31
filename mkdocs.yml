@@ -33,12 +33,12 @@ theme:
         name: Переключиться на тёмную тему
 
   # Полезные функции темы
-  # features:
-  #   - navigation.sections
-  #   - navigation.tracking
-  #   - navigation.footer
-  #   - toc.integrate
-  #   - content.code.copy
+  features:
+    #   - navigation.sections
+    #   - navigation.tracking
+    #   - navigation.footer
+    #   - toc.integrate
+    - content.code.copy
   #   - content.code.annotate
   #   - search.suggest
   #   - search.highlight
@@ -52,12 +52,20 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Kvezac
     - icon: fontawesome/brands/telegram
-      link: https://t.me/твой_канал # ← замени на реальный
+      link: https://t.me/ # ← замени на реальный
 
 # Репозиторий + кнопка "Редактировать"
 repo_url: https://github.com/Kvezac/mkdocs-demo
 repo_name: Kvezac/mkdocs-demo
 edit_uri: edit/main/docs/
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # Следить за изменениями
 watch:
@@ -67,3 +75,5 @@ watch:
 nav:
   - Главная: index.md
   - Обо Мне: about.md
+  - Шпаргалка Linux: linux.md
+  - Настройка терминала: terminal.md
